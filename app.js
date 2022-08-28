@@ -1,9 +1,14 @@
 import headless from "haxball.js";
 import { GAME_STATE, SCORE_LIMIT, TIME_LIMIT, TEAM, TOKEN } from "./utilities/constant.js";
 import { onPlayerJoin, onPlayerLeave } from "./events/join-leave.js";
-import powerMap from "./maps/power-map.json" assert {type: "json"};
 import { onGameStart, onGameStop, onGamePause, onGameUnpause } from "./events/game.js";
 import { onPlayerChat } from "./events/chat.js";
+import { readFile } from 'fs/promises';
+const powerMap = JSON.parse(
+    await readFile(
+        new URL('./maps/power-map.json', import.meta.url)
+    )
+);
 
 ///////////////////////// VARIABLES ///////////////////////////////
 
