@@ -8,7 +8,7 @@
     "node": "16.x"
   },
   "scripts": {
-    "start": "node --experimental-json-modules app.js"
+    "start": "node app.js"
   },
   "author": "emre.kumas",
   "license": "ISC",
