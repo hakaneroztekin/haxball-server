@@ -26,7 +26,7 @@ headless.then((HBInit) => {
 
 function initializeGame(HBInit) {
     room = HBInit({
-        roomName: "Public Kese --- PowerMap vs3",
+        roomName: "[test] Public Kese --- PowerMap vs3",
         maxPlayers: 6,
         token: TOKEN,
         geo: { "code": "tr", "lat": 41, "lon": 29 },
